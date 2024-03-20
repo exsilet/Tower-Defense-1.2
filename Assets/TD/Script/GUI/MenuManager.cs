@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using YG;
 
 public class MenuManager : MonoBehaviour, IListener
 {
@@ -175,13 +176,17 @@ public class MenuManager : MonoBehaviour, IListener
     public void LoadHomeMenuScene()
     {
         SoundManager.Click();
+        
         StartCoroutine(LoadAsynchronously("Menu"));
+        YandexGame.FullscreenShow();
     }
 
     public void RestarLevel()
     {
         SoundManager.Click();
+        
         StartCoroutine(LoadAsynchronously(SceneManager.GetActiveScene().name));
+        YandexGame.FullscreenShow();
     }
 
     public void LoadNextLevel()
@@ -189,7 +194,9 @@ public class MenuManager : MonoBehaviour, IListener
         SoundManager.Click();
         GlobalValue.levelPlaying++;
         string nextLevel = "Lv" + GlobalValue.levelPlaying;
+        
         StartCoroutine(LoadAsynchronously(nextLevel));
+        YandexGame.FullscreenShow();
     }
 
     [Header("Load scene")]

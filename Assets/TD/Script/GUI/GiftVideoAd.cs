@@ -3,15 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using YG;
 
 public class GiftVideoAd : MonoBehaviour
 {
     public Text rewardedTxt;
     public GameObject button;
-    bool allowShow = true;
+
+    private Button adBtn;
+    //bool allowShow = true;
     // Start is called before the first frame update
     void Start()
     {
+        adBtn = button.GetComponent<Button>();
         //if (GameMode.Instance)
         //{
         //    rewardedTxt.text = AdsManager.Instance.rewardedWatchAd + "";
@@ -24,27 +28,60 @@ public class GiftVideoAd : MonoBehaviour
         //button.SetActive(allowShow && AdsManager.Instance && AdsManager.Instance.isRewardedAdReady());
     }
 
+    private void OnEnable()
+    {
+        YandexGame.OpenVideoEvent += OpenVideoReward;
+        YandexGame.RewardVideoEvent += Rewarded;
+        YandexGame.CloseVideoEvent += CloseVideoReward;
+    }
+
+    // Отписываемся от события открытия рекламы в OnDisable
+    private void OnDisable()
+    {
+        YandexGame.OpenVideoEvent -= OpenVideoReward;
+        YandexGame.RewardVideoEvent -= Rewarded;
+        YandexGame.CloseVideoEvent -= CloseVideoReward;
+    }
+
+    // Подписанный метод получения награды
+    void Rewarded(int id)
+    {
+        AddMoney();
+    }
+
+    private void OpenVideoReward()
+    {
+        adBtn.interactable = false;
+        Time.timeScale = 0;
+    }
+
+    private void CloseVideoReward()
+    {
+        adBtn.interactable = true;
+        Time.timeScale = 1;
+    }
+
     public void WatchVideoAd()
     {
         SoundManager.Click();
-        allowShow = false;
+        //allowShow = false;
         //AdsManager.AdResult += AdsManager_AdResult;
         //AdsManager.Instance.ShowRewardedAds();
-        Invoke("AllowShow", 2);
+        //Invoke("AllowShow", 2);
+
+        YandexGame.RewVideoShow(0);
     }
 
-    private void AdsManager_AdResult(bool isSuccess, int rewarded)
+    private void AddMoney()
     {
         //AdsManager.AdResult -= AdsManager_AdResult;
-        if (isSuccess)
-        {
-            //GlobalValue.SavedCoins += AdsManager.Instance.rewardedWatchAd;
-            SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
-        }
+        GlobalValue.SavedCoins += 300;
+        SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
+
     }
 
-    void AllowShow()
-    {
-        allowShow = true;
-    }
+    //void AllowShow()
+    //{
+    //    allowShow = true;
+    //}
 }
