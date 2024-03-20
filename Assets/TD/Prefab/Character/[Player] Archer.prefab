@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootRate: 1.5
-  force: 25
+  force: 30
   extraForce: 0
   stepCheck: 0.1
   stepAngle: 1
