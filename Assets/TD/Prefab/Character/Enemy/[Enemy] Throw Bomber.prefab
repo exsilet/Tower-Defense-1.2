@@ -380,7 +380,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.04, y: -2.641, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3784733293951656117}
@@ -595,7 +595,7 @@ MonoBehaviour:
   animOverrideController: {fileID: 22100000, guid: 174361d2917f86440b02649f6e085c3a,
     type: 2}
   gravity: 35
-  walkSpeed: 1.5
+  walkSpeed: 3
   multipleSpeed: 1
   enemyLayer:
     serializedVersion: 2
