@@ -168,8 +168,8 @@ MonoBehaviour:
   force: 30
   extraForce: 0
   stepCheck: 0.1
-  stepAngle: 1
-  gravityScale: 6
+  stepAngle: 2
+  gravityScale: 5
   onlyShootTargetInFront: 1
   arrow: {fileID: 8701037159925218743, guid: 4a5585ac522fd784ba033155740d101f, type: 3}
   weaponEffect:
