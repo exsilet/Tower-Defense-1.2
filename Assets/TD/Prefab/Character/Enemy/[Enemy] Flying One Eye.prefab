@@ -356,7 +356,7 @@ MonoBehaviour:
   animOverrideController: {fileID: 22100000, guid: fc4cbed70896fea4ebe77e18ea74901f,
     type: 2}
   gravity: 35
-  walkSpeed: 1.5
+  walkSpeed: 1
   multipleSpeed: 1
   enemyLayer:
     serializedVersion: 2

@@ -206,6 +206,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4167368933662299450, guid: b74f1df87b214ab4fa7ea5ca6646618c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4167368933662299451, guid: b74f1df87b214ab4fa7ea5ca6646618c,
         type: 3}
       propertyPath: timeScale
@@ -616,6 +621,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167368933662299450, guid: b74f1df87b214ab4fa7ea5ca6646618c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1162,12 +1172,12 @@ PrefabInstance:
     - target: {fileID: 2789320161115064298, guid: 14c62279b37e6c24d81d4bce87c6ded6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.47
+      value: 17.85
       objectReference: {fileID: 0}
     - target: {fileID: 2789320161115064298, guid: 14c62279b37e6c24d81d4bce87c6ded6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.39
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 2789320161115064298, guid: 14c62279b37e6c24d81d4bce87c6ded6,
         type: 3}
@@ -1315,26 +1325,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1528834966}
     m_Modifications:
-    - target: {fileID: 3517696946187411541, guid: fec56fd7f166c4b4f972a0a9a553598a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3517696946187411541, guid: fec56fd7f166c4b4f972a0a9a553598a,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3517696946187411541, guid: fec56fd7f166c4b4f972a0a9a553598a,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3517696946187411541, guid: fec56fd7f166c4b4f972a0a9a553598a,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3517696946187411541, guid: fec56fd7f166c4b4f972a0a9a553598a,
         type: 3}
       propertyPath: m_LocalPosition.x
