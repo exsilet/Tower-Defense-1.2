@@ -5,7 +5,7 @@ using UnityEngine;
 public class FixedCamera : MonoBehaviour
 {
     [ReadOnly] public float fixedWidth;
-    [ReadOnly] public int orthographicSize = 5;
+    [ReadOnly] public float orthographicSize = 7.35f;
     // Start is called before the first frame update
     void Start()
     {
