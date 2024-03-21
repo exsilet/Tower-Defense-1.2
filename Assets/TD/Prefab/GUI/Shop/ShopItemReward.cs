@@ -5,7 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.Advertisements;
 
 public class ShopItemReward : MonoBehaviour {
-    public string itemName = "ITEM NAME";
+    /// <summary>
+    /// ////public string itemName = "ITEM NAME";
+    /// </summary>
 	public enum ItemType{DoubleArrow, TripleArrow, Posion, Freeze}
 	public ItemType itemType;
 
@@ -51,7 +53,7 @@ public class ShopItemReward : MonoBehaviour {
 
 		rewardedAmountTxt.text = "x" + rewardedUnit;
 		coinTxt.text = coinPrice.ToString ();
-        nameTxt.text = itemName;
+        //////////nameTxt.text = itemName;
         //options = new ShowOptions { resultCallback = HandleShowResult2 };
     }
 
@@ -135,16 +137,16 @@ public class ShopItemReward : MonoBehaviour {
         switch (itemType)
         {
             case ItemType.DoubleArrow:
-                currentAmountTxt.text = "current: " + GlobalValue.ItemDoubleArrow;
+                currentAmountTxt.text = GlobalValue.ItemDoubleArrow.ToString();
                 break;
             case ItemType.TripleArrow:
-                currentAmountTxt.text = "current: " + GlobalValue.ItemTripleArrow;
+                currentAmountTxt.text = GlobalValue.ItemTripleArrow.ToString();
                 break;
             case ItemType.Posion:
-                currentAmountTxt.text = "current: " + GlobalValue.ItemPoison;
+                currentAmountTxt.text = GlobalValue.ItemPoison.ToString();
                 break;
             case ItemType.Freeze:
-                currentAmountTxt.text = "current: " + GlobalValue.ItemFreeze;
+                currentAmountTxt.text = GlobalValue.ItemFreeze.ToString();
                 break;
             default:
                 break;

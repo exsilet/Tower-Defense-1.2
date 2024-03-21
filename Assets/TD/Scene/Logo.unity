@@ -4982,12 +4982,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: e501522379e36c64692eccf709a2a163,
+      objectReference: {fileID: 12800000, guid: b34ab54c5d4d14637bd2d5ee532472e8,
         type: 3}
     - target: {fileID: 9058057462205048650, guid: 171380d63d9947849959fa5b94c487d3,
         type: 3}
       propertyPath: m_FontData.m_MaxSize
-      value: 30
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058057462205048650, guid: 171380d63d9947849959fa5b94c487d3,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058057462205048650, guid: 171380d63d9947849959fa5b94c487d3,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9058057462328230134, guid: 171380d63d9947849959fa5b94c487d3,
         type: 3}
@@ -5018,7 +5028,11 @@ PrefabInstance:
     - {fileID: 9058057461885403839, guid: 171380d63d9947849959fa5b94c487d3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9058057462205048648, guid: 171380d63d9947849959fa5b94c487d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 912652325}
   m_SourcePrefab: {fileID: 100100000, guid: 171380d63d9947849959fa5b94c487d3, type: 3}
 --- !u!224 &814467884 stripped
 RectTransform:
@@ -5870,6 +5884,76 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 906225865}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &912652323 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9058057462205048648, guid: 171380d63d9947849959fa5b94c487d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 814467883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &912652325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912652323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMPComponent: {fileID: 0}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 912652326}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u0417\u0410\u0413\u0420\u0423\u0417\u041A\u0410"
+  en: LOADING
+  tr: "Y\xDCKLEN\u0130YOR"
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: 
+  uz: 
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: 
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 3/3 completed
+  componentTextField: 1
+  countLang: 3
+--- !u!114 &912652326 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9058057462205048650, guid: 171380d63d9947849959fa5b94c487d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 814467883}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912652323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &945054295
 PrefabInstance:
   m_ObjectHideFlags: 0

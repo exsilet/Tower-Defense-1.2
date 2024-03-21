@@ -23,7 +23,7 @@ public class UI_UI : MonoBehaviour
 
         healthSlider.value = 1;
         enemyWavePercentSlider.value = 0;
-        levelName.text = "Level " + GlobalValue.levelPlaying;
+        levelName.text = GlobalValue.levelPlaying.ToString();
     }
 
     private void Update()

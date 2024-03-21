@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ShopItemUpgrade : MonoBehaviour
 {
-    public string itemName = "ITEM NAME";
+    //public string itemName = "ITEM NAME";
     public string infor = "information for item";
     public enum ItemType { LongShoot, Archers, Fortress }
     public ItemType itemType;
@@ -43,8 +43,8 @@ public class ShopItemUpgrade : MonoBehaviour
                     break;
             }
         }
-        nameTxt.text = itemName;
-        inforTxt.text = infor;
+        //nameTxt.text = itemName;
+        ///inforTxt.text = infor;
         coinTxt.text = coinPrice + "";
 
         UpdateStatus();
