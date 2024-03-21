@@ -5107,9 +5107,9 @@ RectTransform:
   - {fileID: 793841755}
   m_Father: {fileID: 1025588822}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -175, y: 126}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 176, y: 80.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &530149450
@@ -7669,7 +7669,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793841754}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bdd2180eecc74c440b03ff6288fb1018, type: 2}
   m_CullingMode: 0
@@ -7682,6 +7682,103 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &814681802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 814681803}
+  - component: {fileID: 814681806}
+  - component: {fileID: 814681805}
+  - component: {fileID: 814681804}
+  m_Layer: 5
+  m_Name: Image (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &814681803
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814681802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.72599, y: 0.72599, z: 0.72599}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1025588822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 1082, y: -46.5}
+  m_SizeDelta: {x: 474.8, y: 494.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &814681804
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814681802}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bdd2180eecc74c440b03ff6288fb1018, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &814681805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814681802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f4f35a6ba125b423986863542192a1fc, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &814681806
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814681802}
+  m_CullTransparentMesh: 0
 --- !u!1001 &815692607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7849,14 +7946,14 @@ RectTransform:
   m_GameObject: {fileID: 817816890}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.70426595, y: 0.70426595, z: 0.70426595}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1025588822}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 298, y: -12.743}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -61}
   m_SizeDelta: {x: 933.63, y: 973.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &817816892
@@ -7910,7 +8007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateType: 0
-  speed: 0.5
+  speed: 0.1
 --- !u!95 &817816895
 Animator:
   serializedVersion: 5
@@ -9729,6 +9826,7 @@ RectTransform:
   - {fileID: 1490395240}
   - {fileID: 817816891}
   - {fileID: 1730675542}
+  - {fileID: 814681803}
   - {fileID: 530149449}
   - {fileID: 1080726655}
   - {fileID: 1443375792}
@@ -11557,7 +11655,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417087527}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bdd2180eecc74c440b03ff6288fb1018, type: 2}
   m_CullingMode: 0
@@ -12085,7 +12183,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490395239}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bdd2180eecc74c440b03ff6288fb1018, type: 2}
   m_CullingMode: 0
@@ -12115,9 +12213,10 @@ MonoBehaviour:
   textLComponent: {fileID: 1490395244}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: 
-  ru: "\u041E\u0411\u041E\u0420\u041E\u041D\u0410 \u0411\u0410\u0428\u041D\u0418"
-  en: TOWER DEFENSE
-  tr: KULE SAVUNMASI
+  ru: "\u0421\u0442\u0438\u043A\u043C\u0435\u043D \u043F\u0440\u043E\u0442\u0438\u0432
+    \u041D\u0423\u0411\u0418\u041A\u0410\n\u0422\u041E\u0412\u0415\u0420 \u0414\u0415\u0424\u0415\u041D\u0421"
+  en: "Sticman VS NUBIC \nTOWER DEFENSE"
+  tr: "Sticman VS NUBIC \nTOWER SAVUNMA"
   az: 
   be: 
   he: 
@@ -12134,7 +12233,9 @@ MonoBehaviour:
   tk: 
   uk: 
   uz: 
-  es: TORRE DE DEFENSA
+  es: 'Sticman VS NUBIC
+
+    DEFENSA DE LA TORRE'
   pt: 
   ar: 
   id: 
@@ -12147,9 +12248,9 @@ MonoBehaviour:
   uniqueFont: {fileID: 0}
   additionalText: {fileID: 0}
   textHeight: 20
-  processTranslateLabel: 1/4 completed
+  processTranslateLabel: 4/4 completed
   componentTextField: 1
-  countLang: 1
+  countLang: 4
 --- !u!114 &1490395243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12198,7 +12299,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: TOWER DEFENSE
+  m_Text: "Sticman VS NUBIC \nTOWER DEFENSE"
 --- !u!222 &1490395245
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13637,14 +13738,14 @@ RectTransform:
   m_GameObject: {fileID: 1730675541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.76135, y: 0.76135, z: 0.76135}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1025588822}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 373, y: -56}
+  m_AnchoredPosition: {x: 233, y: -178.2}
   m_SizeDelta: {x: 474.8, y: 494.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1730675543
@@ -13667,7 +13768,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300040, guid: 6f2423934acc2584db4836391e0888a1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5c9cb1c2f6e545beb6be206b2a3d500, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13693,7 +13794,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730675541}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bdd2180eecc74c440b03ff6288fb1018, type: 2}
   m_CullingMode: 0
