@@ -9,6 +9,8 @@ public class LevelEnemyManager : MonoBehaviour, IListener
     public EnemyWave[] EnemyWaves;
     int currentWave = 0;
 
+    private int _deathEnemy;
+
     List<GameObject> listEnemySpawned = new List<GameObject>();
 
     private void Awake()
@@ -45,7 +47,8 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                 }
             }
         }
-
+        
+        MenuManager.Instance.UpdateEnemyWavePercent(totalEnemy);
         currentSpawn = 0;
     }
 
@@ -71,16 +74,20 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                     listEnemySpawned.Add(_temp);
 
                     currentSpawn++;
-                    MenuManager.Instance.UpdateEnemyWavePercent(currentSpawn, totalEnemy);
 
                     yield return new WaitForSeconds(enemySpawn.rate);
                 }
             }
         }
 
+        
         //check all enemy killed
-        while (isEnemyAlive()) { yield return new WaitForSeconds(0.1f); }
+        while (isEnemyAlive())
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
 
+        
         yield return new WaitForSeconds(1);
         GameManager.Instance.Victory();
     }
@@ -88,13 +95,25 @@ public class LevelEnemyManager : MonoBehaviour, IListener
 
     bool isEnemyAlive()
     {
-        for(int i = 0; i< listEnemySpawned.Count;i++)
+        foreach (GameObject enemy in listEnemySpawned)
         {
-            if (listEnemySpawned[i].activeInHierarchy)
+            if (enemy.activeInHierarchy)
+            {
                 return true;
+            }
         }
-
         return false;
+    }
+
+    private void DeathEnemy()
+    {
+        foreach (GameObject enemy in listEnemySpawned)
+        {
+            if (!enemy.activeSelf)
+            {
+                _deathEnemy++;
+            }
+        }
     }
 
     public void IGameOver()

@@ -67,9 +67,14 @@ public class MenuManager : MonoBehaviour, IListener
         uiControl.UpdateHealthbar(currentHealth, maxHealth);
     }
 
-    public void UpdateEnemyWavePercent(float currentSpawn, float maxValue)
+    public void UpdateEnemyWavePercent(float maxValue)
     {
-        uiControl.UpdateEnemyWavePercent(currentSpawn, maxValue);
+        uiControl.UpdateEnemyWavePercent(maxValue);
+    }
+    
+    public void UpdateEnemyDeath(int countEnemyDeath)
+    {
+        uiControl.UpdateEnemyDeath(countEnemyDeath);
     }
 
     void Update()

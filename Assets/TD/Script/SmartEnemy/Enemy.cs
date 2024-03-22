@@ -300,6 +300,7 @@ public class Enemy : MonoBehaviour,ICanTakeDamage, IListener {
 	}
 
     public virtual void Die(){
+	    MenuManager.Instance.UpdateEnemyDeath(1);
 		isPlaying = false;
 		GameManager.Instance.RemoveListener (this);
 		isPlayerDetected = false;

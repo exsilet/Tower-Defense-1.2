@@ -10,6 +10,9 @@ public class CharacterBodyPart : MonoBehaviour, ICanTakeDamageBodyPart
     public int multipleDamageX = 1;
     public GameObject hitFX;
     public GameObject ownerHitFX;
+    [Range(0,1)]
+    public float soundHitVol = 0.5f;
+    public AudioClip headHit;
 
     public bool allowPushBack = false;
     public bool allowKnockDown = false;
@@ -25,7 +28,9 @@ public class CharacterBodyPart : MonoBehaviour, ICanTakeDamageBodyPart
 
         if (hitFX)
         {
-            SpawnSystemHelper.GetNextObject(hitFX, true).transform.position = hitPosition;
+            Instantiate (hitFX, transform.position, hitFX.transform.rotation);
+            SoundManager.PlaySfx (headHit, soundHitVol);
+            //SpawnSystemHelper.GetNextObject(hitFX, true).transform.position = hitPosition;
         }
 
         if (ownerHitFX)

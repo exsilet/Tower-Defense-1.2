@@ -5,21 +5,24 @@ using UnityEngine.UI;
 
 public class UI_UI : MonoBehaviour
 {
+    [SerializeField] private Text _deathMonster;
+    
     public Slider healthSlider;
     public Text health;
 
     public Slider enemyWavePercentSlider;
 
-    float healthValue, enemyWaveValue;
-    public float lerpSpeed = 1;
+    float healthValue, enemyWaveValue, countEnemyDeath, enemyValue;
+    public float lerpSpeed = 1f;
 
     public Text pointTxt;
     public Text levelName;
+    
+    private float _lerpSpeedEnemy = 0.05f;
 
     private void Start()
     {
         healthValue = 1;
-        enemyWaveValue = 0;
 
         healthSlider.value = 1;
         enemyWavePercentSlider.value = 0;
@@ -29,7 +32,7 @@ public class UI_UI : MonoBehaviour
     private void Update()
     {
         healthSlider.value = Mathf.Lerp(healthSlider.value, healthValue, lerpSpeed * Time.deltaTime);
-        enemyWavePercentSlider.value = Mathf.Lerp(enemyWavePercentSlider.value, enemyWaveValue, lerpSpeed * Time.deltaTime);
+        enemyWavePercentSlider.value = Mathf.Lerp(enemyWavePercentSlider.value, enemyValue, _lerpSpeedEnemy);
 
         pointTxt.text = GameManager.Instance.Point + "";
     }
@@ -40,10 +43,19 @@ public class UI_UI : MonoBehaviour
         health.text = currentHealth + "/" + maxHealth;
     }
 
-    public void UpdateEnemyWavePercent(float currentSpawn, float maxValue)
+    public void UpdateEnemyWavePercent(float maxValue)
     {
-        enemyWaveValue = Mathf.Clamp01(currentSpawn / maxValue);
+        enemyWaveValue += maxValue;
+        _deathMonster.text = countEnemyDeath + "/" + enemyWaveValue;
+        //enemyWaveValue = Mathf.Clamp01(currentSpawn / maxValue);
     }
-    
-   
+
+
+    public void UpdateEnemyDeath(int enemyDeath)
+    {
+        countEnemyDeath += enemyDeath;
+        enemyValue = Mathf.Clamp01(countEnemyDeath / enemyWaveValue);
+        _deathMonster.text = countEnemyDeath + "/" + enemyWaveValue;
+    }
+        
 }

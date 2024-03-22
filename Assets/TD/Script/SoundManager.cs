@@ -11,6 +11,8 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip musicsGame;
 	[Range(0,1)]
 	public float musicsGameVolume = 0.5f;
+	[Range(0,1)]
+	public float soundGameVolume = 0.5f;
 
 	[Tooltip("Place the sound in this to call it in another script by: SoundManager.PlaySfx(soundname);")]
 	public AudioClip soundClick;
@@ -67,6 +69,7 @@ public class SoundManager : MonoBehaviour {
 		musicAudio.loop = true;
 		musicAudio.volume = 0.5f;
 		soundFx = gameObject.AddComponent<AudioSource> ();
+		soundFx.volume = soundGameVolume;
 	}
 	void Start () {
 //		//Check auido and sound

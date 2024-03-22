@@ -183,6 +183,8 @@ MonoBehaviour:
   multipleDamageX: 1
   hitFX: {fileID: 0}
   ownerHitFX: {fileID: 0}
+  soundHitVol: 0.5
+  headHit: {fileID: 0}
   allowPushBack: 0
   allowKnockDown: 0
   allowShock: 0
@@ -521,7 +523,7 @@ MonoBehaviour:
   animOverrideController: {fileID: 22100000, guid: 2b8c4c9eb8f5e4640a20af7eb1571cb6,
     type: 2}
   gravity: 35
-  walkSpeed: 1
+  walkSpeed: 1.25
   multipleSpeed: 1
   enemyLayer:
     serializedVersion: 2
@@ -816,6 +818,8 @@ MonoBehaviour:
   multipleDamageX: 5
   hitFX: {fileID: 0}
   ownerHitFX: {fileID: 0}
+  soundHitVol: 0.5
+  headHit: {fileID: 8300000, guid: 1d5c70a44377a8a419b2367b42c300b6, type: 3}
   allowPushBack: 0
   allowKnockDown: 0
   allowShock: 0
