@@ -1145,16 +1145,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2418363519264089232, guid: 3a9adb650e235d44488f3b38b2b2d397,
-        type: 3}
-      propertyPath: orthographic size
-      value: 7.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 2418363519264089235, guid: 3a9adb650e235d44488f3b38b2b2d397,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2418363519264089235, guid: 3a9adb650e235d44488f3b38b2b2d397,
         type: 3}
       propertyPath: m_LocalPosition.x
