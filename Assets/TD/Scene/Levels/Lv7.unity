@@ -1625,49 +1625,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1719855629, guid: 6aa5ae7c37066e44a989d8bb5d049879, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 1719855630, guid: 6aa5ae7c37066e44a989d8bb5d049879, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 767797111684886600, guid: 6aa5ae7c37066e44a989d8bb5d049879,
+    - target: {fileID: 2983545644899209256, guid: 6aa5ae7c37066e44a989d8bb5d049879,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2296742829195510297, guid: 6aa5ae7c37066e44a989d8bb5d049879,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_LocalScale.x
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3317739624190941490, guid: 6aa5ae7c37066e44a989d8bb5d049879,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6688261968632632152, guid: 6aa5ae7c37066e44a989d8bb5d049879,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.36
-      objectReference: {fileID: 0}
     - target: {fileID: 7373062473687932697, guid: 6aa5ae7c37066e44a989d8bb5d049879,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 7373062473687932697, guid: 6aa5ae7c37066e44a989d8bb5d049879,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.45
+      propertyPath: m_LocalScale.x
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7373062473817378371, guid: 6aa5ae7c37066e44a989d8bb5d049879,
         type: 3}
       propertyPath: m_Name
       value: Camera Parallax
-      objectReference: {fileID: 0}
-    - target: {fileID: 7373062473817378372, guid: 6aa5ae7c37066e44a989d8bb5d049879,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7373062473817378372, guid: 6aa5ae7c37066e44a989d8bb5d049879,
         type: 3}
