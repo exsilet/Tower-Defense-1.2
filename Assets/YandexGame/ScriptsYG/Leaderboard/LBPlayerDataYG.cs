@@ -77,7 +77,25 @@ namespace YG
             {
                 if (data.inTop)
                 {
-                    ActivityMomoObjects(topPlayerActivityComponents, true);
+                    if (data.rank == 1.ToString())
+                    {
+                        topPlayerActivityComponents[0].enabled = true;
+                        topPlayerActivityComponents[1].enabled = false;
+                        topPlayerActivityComponents[2].enabled = false;
+                    }
+                    else if (data.rank == 2.ToString())
+                    {
+                        topPlayerActivityComponents[1].enabled = true;
+                        topPlayerActivityComponents[0].enabled = false;
+                        topPlayerActivityComponents[2].enabled = false;
+                    }
+                    else if (data.rank == 3.ToString())
+                    {
+                        topPlayerActivityComponents[2].enabled = true;
+                        topPlayerActivityComponents[0].enabled = false;
+                        topPlayerActivityComponents[1].enabled = false;
+                    }
+                    //ActivityMomoObjects(topPlayerActivityComponents, true);
                 }
                 else
                 {

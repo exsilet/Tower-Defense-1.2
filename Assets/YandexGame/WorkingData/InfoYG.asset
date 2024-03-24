@@ -41,7 +41,7 @@ MonoBehaviour:
   leaderboardEnable: 1
   saveScoreAnonymousPlayers: 1
   leaderboardSimulation:
-  - technoName: advanced
+  - technoName: CountEnemy
     entries: 'Test LeaderBoard
 
       Name: advanced
@@ -58,7 +58,7 @@ MonoBehaviour:
     type: numeric
     players:
     - rank: 1
-      name: anonymous
+      name: georg
       score: 10
       photo: https://justplaygames.ru/public/icon_player.png
       uniqueID: 123
