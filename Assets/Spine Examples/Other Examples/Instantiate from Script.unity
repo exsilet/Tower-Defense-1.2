@@ -42,7 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 11
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 8
+    serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -71,7 +71,7 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-    m_MixedBakeMode: 3
+    m_MixedBakeMode: 2
     m_BakeBackend: 0
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
@@ -87,7 +87,7 @@ LightmapSettings:
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 0}
-  m_ShadowMaskMode: 2
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -194,7 +194,6 @@ GameObject:
   m_Component:
   - component: {fileID: 433620968}
   - component: {fileID: 433620967}
-  - component: {fileID: 433620966}
   - component: {fileID: 433620965}
   - component: {fileID: 433620964}
   m_Layer: 0
@@ -212,13 +211,6 @@ AudioListener:
   m_GameObject: {fileID: 433620963}
   m_Enabled: 1
 --- !u!124 &433620965
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 433620963}
-  m_Enabled: 1
---- !u!92 &433620966
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -284,7 +276,7 @@ GameObject:
   - component: {fileID: 651278530}
   - component: {fileID: 651278529}
   m_Layer: 0
-  m_Name: 2 DataAssets from Exports
+  m_Name: 2 RuntimeLoadFromExports
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,13 +354,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1691562006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53c7df9ccd5732543bcd589e8270ba1c, type: 3}
+  m_Script: {fileID: 11500000, guid: dd4ba29b300e5cc408471ea14fa3551a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   skeletonDataAsset: {fileID: 11400000, guid: a467507a4ffb1d542a558739b2fede77, type: 2}
   startingAnimation: run
   startingSkin: base
-  skeletonGraphicMaterial: {fileID: 2100000, guid: b66cf7a186d13054989b33a5c90044e4,
+  skeletonGraphicMaterial: {fileID: 2100000, guid: 1455e88fdb81ccc45bdeaedd657bad4d,
     type: 2}
 --- !u!1 &1807176298
 GameObject:

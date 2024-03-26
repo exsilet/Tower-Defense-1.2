@@ -1,0 +1,25 @@
+CubeNPC.png
+size:463,357
+filter:Linear,Linear
+pma:true
+Слой 0
+bounds:179,3,76,155
+offsets:0,0,77,156
+Слой 1
+bounds:128,160,195,159
+rotate:90
+Слой 2
+bounds:2,22,93,175
+rotate:90
+Слой 3
+bounds:289,270,85,172
+offsets:0,0,85,173
+rotate:90
+Слой 4
+bounds:289,78,171,190
+Слой 5
+bounds:257,2,74,148
+rotate:90
+Слой 6
+bounds:2,117,238,124
+rotate:90

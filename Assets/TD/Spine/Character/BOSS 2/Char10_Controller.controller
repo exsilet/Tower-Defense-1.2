@@ -645,14 +645,14 @@ AnimationClip:
   m_Events:
   - time: 0.5667
     functionName: AnimMeleeAttackStart
-    data: 
+    data: SpineEvent
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 1
   - time: 0.8333
     functionName: AnimMeleeAttackEnd
-    data: 
+    data: SpineEvent
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
