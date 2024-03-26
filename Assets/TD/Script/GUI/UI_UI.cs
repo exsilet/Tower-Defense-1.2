@@ -12,7 +12,8 @@ public class UI_UI : MonoBehaviour
 
     public Slider enemyWavePercentSlider;
 
-    float healthValue, enemyWaveValue, countEnemyDeath, enemyValue;
+    float healthValue, enemyWaveValue, enemyValue;
+    int countEnemyDeath;
     public float lerpSpeed = 1f;
 
     public Text pointTxt;
@@ -53,7 +54,10 @@ public class UI_UI : MonoBehaviour
 
     public void UpdateEnemyDeath(int enemyDeath)
     {
+        
         countEnemyDeath += enemyDeath;
+        GameManager.Instance.Death = countEnemyDeath;
+        Debug.Log(GameManager.Instance.Death);
         enemyValue = Mathf.Clamp01(countEnemyDeath / enemyWaveValue);
         _deathMonster.text = countEnemyDeath + "/" + enemyWaveValue;
     }

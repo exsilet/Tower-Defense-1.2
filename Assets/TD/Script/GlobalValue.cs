@@ -41,7 +41,13 @@ public class GlobalValue : MonoBehaviour {
 		set { PlayerPrefs.SetInt ("Points", value); } 
 	}
 
-	public static int LevelPass { 
+    public static int SavedDeath
+    {
+        get { return PlayerPrefs.GetInt("CountDeathEnemy", 0); }
+        set { PlayerPrefs.SetInt("CountDeathEnemy", value); }
+    }
+
+    public static int LevelPass { 
 		get { return PlayerPrefs.GetInt ("LevelReached", 0); } 
 		set { PlayerPrefs.SetInt ("LevelReached", value); } 
 	}

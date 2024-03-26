@@ -7,7 +7,8 @@ public class MainMenuHomeScene : MonoBehaviour {
 	public static MainMenuHomeScene Instance;
 	public GameObject MapUI;
     public GameObject ShopUI;
-	public GameObject Loading;
+    public GameObject LeaderboardUI;
+    public GameObject Loading;
 	//public GameObject RemoveAdBut;
 	//public GameObject NewgameBut;
 	//public GameObject ContinueBut;
@@ -39,6 +40,8 @@ public class MainMenuHomeScene : MonoBehaviour {
             Settings.SetActive(false);
         if (ShopUI)
             ShopUI.SetActive(false);
+        if (LeaderboardUI)
+            LeaderboardUI.SetActive(false);
 
     }
 
@@ -162,6 +165,12 @@ public class MainMenuHomeScene : MonoBehaviour {
     {
         SoundManager.Click();
         ShopUI.SetActive(open);
+    }
+
+    public void OpenLeaderboard(bool open)
+    {
+        SoundManager.Click();
+        LeaderboardUI.SetActive(open);
     }
 
     public void Tutorial(){

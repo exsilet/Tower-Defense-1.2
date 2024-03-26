@@ -8,6 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using YG;
 
 public class GameManager: MonoBehaviour {
 	public static GameManager Instance{ get; private set;}
@@ -34,6 +35,8 @@ public class GameManager: MonoBehaviour {
     }
 
     public int Point { get; set; }
+
+    public int Death { get; set; }
 
     void Awake(){
 		Instance = this;
@@ -120,8 +123,11 @@ public class GameManager: MonoBehaviour {
             if (item != null) 
                 item.ISuccess();
         }
-
+        GlobalValue.SavedDeath += Death;
         GlobalValue.SavedCoins += Point;
+        Debug.Log(GlobalValue.SavedDeath);
+        YandexGame.NewLeaderboardScores("CountEnemy", GlobalValue.SavedDeath);
+
         //save level and save star
         if (GlobalValue.levelPlaying > GlobalValue.LevelPass)
             GlobalValue.LevelPass = GlobalValue.levelPlaying;
