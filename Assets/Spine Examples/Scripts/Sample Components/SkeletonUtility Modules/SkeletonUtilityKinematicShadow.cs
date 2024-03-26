@@ -28,6 +28,7 @@
  *****************************************************************************/
 
 using System.Collections.Generic;
+using Spine.Runtime.spine_unity.Components.SkeletonUtility;
 using UnityEngine;
 
 namespace Spine.Unity.Examples {

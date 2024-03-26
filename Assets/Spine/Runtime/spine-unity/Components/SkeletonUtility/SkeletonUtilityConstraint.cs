@@ -31,6 +31,7 @@
 #define NEW_PREFAB_SYSTEM
 #endif
 
+using Spine.Runtime.spine_unity.Components.SkeletonUtility;
 using UnityEngine;
 
 namespace Spine.Unity {

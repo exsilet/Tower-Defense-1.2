@@ -61,5 +61,4 @@ public class UI_UI : MonoBehaviour
         enemyValue = Mathf.Clamp01(countEnemyDeath / enemyWaveValue);
         _deathMonster.text = countEnemyDeath + "/" + enemyWaveValue;
     }
-        
 }

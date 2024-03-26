@@ -33,7 +33,7 @@
 
 using UnityEngine;
 
-namespace Spine.Unity {
+namespace Spine.Runtime.spine_unity.Components.SkeletonUtility {
 	/// <summary>Sets a GameObject's transform to match a bone on a Spine skeleton.</summary>
 #if NEW_PREFAB_SYSTEM
 	[ExecuteAlways]

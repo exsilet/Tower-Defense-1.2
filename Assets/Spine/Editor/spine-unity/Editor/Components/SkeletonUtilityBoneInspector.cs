@@ -35,6 +35,7 @@
 
 using Spine;
 using System.Collections.Generic;
+using Spine.Runtime.spine_unity.Components.SkeletonUtility;
 using UnityEditor;
 using UnityEngine;
 

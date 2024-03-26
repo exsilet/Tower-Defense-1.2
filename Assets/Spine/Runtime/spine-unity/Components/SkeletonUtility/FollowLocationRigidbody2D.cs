@@ -27,6 +27,7 @@
  * SPINE RUNTIMES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *****************************************************************************/
 
+using Spine.Runtime.spine_unity.Components.SkeletonUtility;
 using UnityEngine;
 
 namespace Spine.Unity {

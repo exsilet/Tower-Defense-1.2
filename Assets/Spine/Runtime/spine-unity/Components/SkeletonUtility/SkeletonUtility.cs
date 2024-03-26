@@ -32,9 +32,10 @@
 #endif
 
 using System.Collections.Generic;
+using Spine.Unity;
 using UnityEngine;
 
-namespace Spine.Unity {
+namespace Spine.Runtime.spine_unity.Components.SkeletonUtility {
 
 #if NEW_PREFAB_SYSTEM
 	[ExecuteAlways]

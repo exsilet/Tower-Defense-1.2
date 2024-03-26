@@ -36,6 +36,7 @@
 #endif
 
 using System.Reflection;
+using Spine.Runtime.spine_unity.Components.SkeletonUtility;
 using UnityEditor;
 using UnityEngine;
 
