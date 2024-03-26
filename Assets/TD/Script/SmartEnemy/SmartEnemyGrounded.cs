@@ -1,7 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using Spine.Unity.Examples;
 using UnityEngine;
-using Spine.Unity.Modules;
 
 [AddComponentMenu("ADDP/Enemy AI/Smart Enemy Ground Control")]
 [RequireComponent (typeof (Controller2D))]

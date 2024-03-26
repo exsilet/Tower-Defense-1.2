@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -11,16 +10,16 @@ public class MenuManager : MonoBehaviour, IListener
     public GameObject Shoot;
     public GameObject StartUI;
     public GameObject UI;
-    public GameObject VictotyUI;
+    public GameObject VictoryUI;
     public GameObject FailUI;
     public GameObject PauseUI;
     public GameObject LoadingUI;
+    public GameObject ShopUI;
 
     [Header("Sound and Music")]
     public Image soundImage;
     public Image musicImage;
     public Sprite soundImageOn, soundImageOff, musicImageOn, musicImageOff;
-
 
     UI_UI uiControl;
 
@@ -31,14 +30,13 @@ public class MenuManager : MonoBehaviour, IListener
         Shoot.SetActive(false);
         StartUI.SetActive(false);
         UI.SetActive(false);
-        VictotyUI.SetActive(false);
+        VictoryUI.SetActive(false);
         FailUI.SetActive(false);
         PauseUI.SetActive(false);
         LoadingUI.SetActive(false);
+        ShopUI.SetActive(false);
 
         uiControl = gameObject.GetComponentInChildren<UI_UI>(true);
-
-       
     }
 
     IEnumerator Start()
@@ -58,8 +56,6 @@ public class MenuManager : MonoBehaviour, IListener
         UI.SetActive(true);
 
         GameManager.Instance.StartGame();
-
-        
     }
 
     public void UpdateHealthbar(float currentHealth, float maxHealth)
@@ -75,11 +71,6 @@ public class MenuManager : MonoBehaviour, IListener
     public void UpdateEnemyDeath(int countEnemyDeath)
     {
         uiControl.UpdateEnemyDeath(countEnemyDeath);
-    }
-
-    void Update()
-    {
-        
     }
 
     public void Pause()
@@ -115,9 +106,8 @@ public class MenuManager : MonoBehaviour, IListener
         UI.SetActive(false);
 
         yield return new WaitForSeconds(1.5f);
-        VictotyUI.SetActive(true);
+        VictoryUI.SetActive(true);
     }
-
 
     public void IPause()
     {
@@ -157,7 +147,6 @@ public class MenuManager : MonoBehaviour, IListener
     {
        
     }
-
     
     #region Music and Sound
     public void TurnSound()
@@ -185,7 +174,12 @@ public class MenuManager : MonoBehaviour, IListener
         StartCoroutine(LoadAsynchronously("Menu"));
         YandexGame.FullscreenShow();
     }
-
+    
+    public void OpenShop(bool open)
+    {
+        ShopUI.SetActive(open);
+    }
+    
     public void RestarLevel()
     {
         SoundManager.Click();

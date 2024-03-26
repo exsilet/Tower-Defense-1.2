@@ -6,16 +6,16 @@ using UnityEngine.Advertisements;
 /// <summary>
 /// Handle Level Complete UI of Menu object
 /// </summary>
-public class Menu_Victory : MonoBehaviour {
+public class Menu_Victory : MonoBehaviour 
+{
 	public GameObject Menu;
 	public GameObject Restart;
 	public GameObject Next;
-    //public GameObject ComicBut;
+	public GameObject ShopUI;
+	//public GameObject ComicBut;
 	public GameObject Star1;
 	public GameObject Star2;
 	public GameObject Star3;
-
-	
 
 	//public Text Score;
 	//public Text Best;
@@ -24,16 +24,17 @@ public class Menu_Victory : MonoBehaviour {
 	//private int score = 0;
 	//private bool finishCounting = false;
 
-	void Awake(){
+	void Awake()
+	{
 		Menu.SetActive (false);
 		Restart.SetActive (false);
 		Next.SetActive (false);
+		ShopUI.SetActive (false);
 		Star1.SetActive (false);
 		Star2.SetActive (false);
 		Star3.SetActive (false);
-        //ComicBut.SetActive(false);
-
-    }
+		//ComicBut.SetActive(false);
+	}
 
     IEnumerator Start()
     {
@@ -41,7 +42,6 @@ public class Menu_Victory : MonoBehaviour {
         Star1.SetActive(false);
         Star2.SetActive(false);
         Star3.SetActive(false);
-        
 
         var theFortress = FindObjectOfType<TheFortrest>();
         if ((theFortress.currentHealth / theFortress.maxHealth) > 0)
@@ -72,7 +72,8 @@ public class Menu_Victory : MonoBehaviour {
         //when finish counting, enable those button for user choose
         Menu.SetActive(true);
         Restart.SetActive(true);
-        Next.SetActive(true); ;
+        Next.SetActive(true);
+        ShopUI.SetActive(true);
         //				if (!GameManager.instance.isFinishWorld)
         //					Next.SetActive (true);
         //if (GameManager.instance.isFinishWorld && GlobalValue.worldPlaying == 3)
@@ -89,6 +90,7 @@ public class Menu_Victory : MonoBehaviour {
         //    ComicBut.SetActive(true);
         //}
     }
+
     //bool showNormalVideo = false;
 
     //public void ShowEndComic()

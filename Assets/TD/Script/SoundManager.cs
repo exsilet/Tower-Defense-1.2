@@ -71,7 +71,8 @@ public class SoundManager : MonoBehaviour {
 		soundFx = gameObject.AddComponent<AudioSource> ();
 		soundFx.volume = soundGameVolume;
 	}
-	void Start () {
+	void Start () 
+	{
 //		//Check auido and sound
 //		if (!GlobalValue.isMusic)
 //			musicAudio.volume = 0;
@@ -91,13 +92,10 @@ public class SoundManager : MonoBehaviour {
 		PlaySfx (soundClick);
 	}
 
-	public static void PlaySfx(AudioClip clip){
-		if (Instance != null) {
-			Instance.PlaySound (clip, Instance.soundFx);
-			Debug.Log (clip);
-		}
-
-
+	public static void PlaySfx(AudioClip clip)
+	{
+		if (Instance != null) 
+			Instance.PlaySound(clip, Instance.soundFx);
 	}
 
     public static void PlaySfx(AudioClip clip, float volume)

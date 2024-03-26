@@ -564,7 +564,7 @@ AnimationClip:
   m_Events:
   - time: 0.0333
     functionName: AnimShoot
-    data: 
+    data: SpineEvent
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
