@@ -821,7 +821,7 @@ MonoBehaviour:
   owner: {fileID: 333272136619103642}
   _bodyPart: 1
   multipleDamageX: 2
-  hitFX: {fileID: 144926, guid: fcb242a204cb73e46bb764583d0bf1fa, type: 3}
+  hitFX: {fileID: 171432, guid: 0ebcd60dd020022408e53f535d12f313, type: 3}
   ownerHitFX: {fileID: 0}
   soundHitVol: 0.5
   headHit: {fileID: 8300000, guid: 1d5c70a44377a8a419b2367b42c300b6, type: 3}

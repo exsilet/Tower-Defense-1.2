@@ -105,7 +105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 215859535632080597}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe62405c4ab6c074c95243f05475b7d1, type: 3}
+  m_Script: {fileID: 11500000, guid: e659ae81670b41b4aaea0f7969d010e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rewardedTxt: {fileID: 7891590563418516742}
@@ -612,7 +612,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1196739553531161906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe62405c4ab6c074c95243f05475b7d1, type: 3}
+  m_Script: {fileID: 11500000, guid: e659ae81670b41b4aaea0f7969d010e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rewardedTxt: {fileID: 4472809619072737241}
@@ -2197,7 +2197,7 @@ MonoBehaviour:
       - m_Target: {fileID: 3726676922306352593}
         m_TargetAssemblyTypeName: GiftVideoAd, Assembly-CSharp
         m_MethodName: WatchVideoAd
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5303,9 +5303,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2746180864430477958}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: GiftVideoAd, Assembly-CSharp
         m_MethodName: WatchVideoAd
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

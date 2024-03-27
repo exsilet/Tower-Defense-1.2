@@ -89,6 +89,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 3371687861711520891}
 --- !u!60 &6818818655109565517
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -240,6 +241,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 3371687861711520891}
 --- !u!1 &1542090909338730624
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,8 +403,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skeletonDataAsset: {fileID: 11400000, guid: 05e27bfe2939afd46b104df673a4c98f, type: 2}
   initialSkinName: 
+  fixPrefabOverrideViaMeshFilter: 2
   initialFlipX: 0
   initialFlipY: 0
+  updateWhenInvisible: 3
   separatorSlotNames: []
   zSpacing: 0
   useClipping: 1
@@ -411,12 +415,21 @@ MonoBehaviour:
   clearStateOnDisable: 0
   tintBlack: 0
   singleSubmesh: 0
+  fixDrawOrder: 0
   addNormals: 0
   calculateTangents: 0
+  maskInteraction: 0
+  maskMaterials:
+    materialsMaskDisabled: []
+    materialsInsideMask: []
+    materialsOutsideMask: []
   disableRenderingOnOverride: 1
   translator:
     autoReset: 1
+    useCustomMixMode: 1
     layerMixModes: 00000000000000000000000000000000
+    layerBlendModes: 00000000000000000000000000000000
+  updateTiming: 1
 --- !u!61 &6292486953524756884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -588,7 +601,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boneRoot: {fileID: 6764558105175417370}
+  flipBy180DegreeRotation: 0
   skeletonRenderer: {fileID: 1185242537815347430}
+  skeletonGraphic: {fileID: 0}
 --- !u!114 &6359966500989756768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,6 +711,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 3371687861711520891}
 --- !u!1 &7631086252220249408
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,6 +767,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 3371687861711520891}
 --- !u!60 &8381178562888755764
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -816,7 +833,7 @@ MonoBehaviour:
   owner: {fileID: 2742581098072274894}
   _bodyPart: 1
   multipleDamageX: 5
-  hitFX: {fileID: 0}
+  hitFX: {fileID: 171432, guid: 0ebcd60dd020022408e53f535d12f313, type: 3}
   ownerHitFX: {fileID: 0}
   soundHitVol: 0.5
   headHit: {fileID: 8300000, guid: 1d5c70a44377a8a419b2367b42c300b6, type: 3}
@@ -903,6 +920,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 3371687861711520891}
 --- !u!1 &9018367055179667127
 GameObject:
   m_ObjectHideFlags: 0

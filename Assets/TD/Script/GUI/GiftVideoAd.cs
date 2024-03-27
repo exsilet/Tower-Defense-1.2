@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using YG;
 
@@ -16,13 +13,6 @@ public class GiftVideoAd : MonoBehaviour
     void Start()
     {
         adBtn = button.GetComponent<Button>();
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-      
     }
 
     private void OnEnable()
@@ -73,13 +63,12 @@ public class GiftVideoAd : MonoBehaviour
     public void WatchVideoAd(int id)
     {
         SoundManager.Click();
-
-
         YandexGame.RewVideoShow(id);
     }
 
     private void AddMoney()
     {
+        //AdsManager.AdResult -= AdsManager_AdResult;
         GlobalValue.SavedCoins += 300;
         SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
     }
