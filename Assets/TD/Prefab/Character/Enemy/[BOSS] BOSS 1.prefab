@@ -179,6 +179,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 5848783413869001385}
 --- !u!50 &4011189182037227474
 Rigidbody2D:
   serializedVersion: 4
@@ -363,6 +364,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 5848783413869001385}
 --- !u!1 &5018694865952594649
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +418,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 5848783413869001385}
 --- !u!1 &5435259095886829614
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +474,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 5848783413869001385}
 --- !u!50 &1439343130012587083
 Rigidbody2D:
   serializedVersion: 4
@@ -563,7 +567,7 @@ MonoBehaviour:
   owner: {fileID: 5848783413869001439}
   _bodyPart: 1
   multipleDamageX: 1
-  hitFX: {fileID: 144926, guid: fcb242a204cb73e46bb764583d0bf1fa, type: 3}
+  hitFX: {fileID: 171432, guid: 0ebcd60dd020022408e53f535d12f313, type: 3}
   ownerHitFX: {fileID: 0}
   soundHitVol: 0.5
   headHit: {fileID: 8300000, guid: 1d5c70a44377a8a419b2367b42c300b6, type: 3}
@@ -731,8 +735,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skeletonDataAsset: {fileID: 11400000, guid: aac14e01ed024c44aab45128c96bd01a, type: 2}
   initialSkinName: 
+  fixPrefabOverrideViaMeshFilter: 2
   initialFlipX: 0
   initialFlipY: 0
+  updateWhenInvisible: 3
   separatorSlotNames: []
   zSpacing: 0
   useClipping: 1
@@ -741,12 +747,21 @@ MonoBehaviour:
   clearStateOnDisable: 0
   tintBlack: 0
   singleSubmesh: 0
+  fixDrawOrder: 0
   addNormals: 0
   calculateTangents: 0
+  maskInteraction: 0
+  maskMaterials:
+    materialsMaskDisabled: []
+    materialsInsideMask: []
+    materialsOutsideMask: []
   disableRenderingOnOverride: 1
   translator:
     autoReset: 1
+    useCustomMixMode: 1
     layerMixModes: 00000000000000000000000000000000
+    layerBlendModes: 00000000000000000000000000000000
+  updateTiming: 1
 --- !u!61 &5848783413869001427
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -918,7 +933,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boneRoot: {fileID: 1250206546690124387}
+  flipBy180DegreeRotation: 0
   skeletonRenderer: {fileID: 5848783413869001426}
+  skeletonGraphic: {fileID: 0}
 --- !u!114 &922197190802713276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1022,3 +1039,4 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 5848783413869001385}

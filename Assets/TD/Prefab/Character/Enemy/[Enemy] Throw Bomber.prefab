@@ -53,6 +53,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 925561342554985449}
 --- !u!1 &1101129714488765242
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,6 +141,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 925561342554985449}
 --- !u!50 &7014356647837339853
 Rigidbody2D:
   serializedVersion: 4
@@ -232,7 +234,7 @@ MonoBehaviour:
   owner: {fileID: 3924842065213229019}
   _bodyPart: 1
   multipleDamageX: 5
-  hitFX: {fileID: 144926, guid: fcb242a204cb73e46bb764583d0bf1fa, type: 3}
+  hitFX: {fileID: 171432, guid: 0ebcd60dd020022408e53f535d12f313, type: 3}
   ownerHitFX: {fileID: 0}
   soundHitVol: 0.5
   headHit: {fileID: 8300000, guid: 1d5c70a44377a8a419b2367b42c300b6, type: 3}
@@ -292,6 +294,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 925561342554985449}
 --- !u!1 &3065284596935352596
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +348,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 925561342554985449}
 --- !u!1 &3924842065213229019
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,8 +479,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skeletonDataAsset: {fileID: 11400000, guid: 2ca4962b46bc53a499448780d0db3213, type: 2}
   initialSkinName: 
+  fixPrefabOverrideViaMeshFilter: 2
   initialFlipX: 0
   initialFlipY: 0
+  updateWhenInvisible: 3
   separatorSlotNames: []
   zSpacing: 0
   useClipping: 1
@@ -485,12 +491,21 @@ MonoBehaviour:
   clearStateOnDisable: 0
   tintBlack: 0
   singleSubmesh: 0
+  fixDrawOrder: 0
   addNormals: 0
   calculateTangents: 0
+  maskInteraction: 0
+  maskMaterials:
+    materialsMaskDisabled: []
+    materialsInsideMask: []
+    materialsOutsideMask: []
   disableRenderingOnOverride: 1
   translator:
     autoReset: 1
+    useCustomMixMode: 1
     layerMixModes: 00000000000000000000000000000000
+    layerBlendModes: 00000000000000000000000000000000
+  updateTiming: 1
 --- !u!61 &2128254240169928036
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -662,7 +677,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boneRoot: {fileID: 7288343961932840161}
+  flipBy180DegreeRotation: 0
   skeletonRenderer: {fileID: 5609017536777076559}
+  skeletonGraphic: {fileID: 0}
 --- !u!114 &3254813533060044510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,6 +820,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 925561342554985449}
 --- !u!50 &7386678995836060525
 Rigidbody2D:
   serializedVersion: 4
@@ -986,3 +1004,4 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 925561342554985449}

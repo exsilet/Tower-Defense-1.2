@@ -130,8 +130,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skeletonDataAsset: {fileID: 11400000, guid: c54563e1bcd485046ad04fa7a4c048a0, type: 2}
   initialSkinName: 
+  fixPrefabOverrideViaMeshFilter: 2
   initialFlipX: 0
   initialFlipY: 0
+  updateWhenInvisible: 3
   separatorSlotNames: []
   zSpacing: 0
   useClipping: 1
@@ -140,12 +142,21 @@ MonoBehaviour:
   clearStateOnDisable: 0
   tintBlack: 0
   singleSubmesh: 0
+  fixDrawOrder: 0
   addNormals: 0
   calculateTangents: 0
+  maskInteraction: 0
+  maskMaterials:
+    materialsMaskDisabled: []
+    materialsInsideMask: []
+    materialsOutsideMask: []
   disableRenderingOnOverride: 1
   translator:
     autoReset: 1
+    useCustomMixMode: 1
     layerMixModes: 00000000000000000000000000000000
+    layerBlendModes: 00000000000000000000000000000000
+  updateTiming: 1
 --- !u!61 &1384076305360503888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -317,7 +328,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boneRoot: {fileID: 7110954477312613180}
+  flipBy180DegreeRotation: 0
   skeletonRenderer: {fileID: 1384076305360503889}
+  skeletonGraphic: {fileID: 0}
 --- !u!114 &5679737192734217279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,6 +592,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 1384076305360503850}
 --- !u!50 &7110954475464612362
 Rigidbody2D:
   serializedVersion: 4
@@ -672,7 +686,7 @@ MonoBehaviour:
   owner: {fileID: 1384076305360503900}
   _bodyPart: 1
   multipleDamageX: 1
-  hitFX: {fileID: 144926, guid: fcb242a204cb73e46bb764583d0bf1fa, type: 3}
+  hitFX: {fileID: 171432, guid: 0ebcd60dd020022408e53f535d12f313, type: 3}
   ownerHitFX: {fileID: 0}
   soundHitVol: 0.5
   headHit: {fileID: 8300000, guid: 1d5c70a44377a8a419b2367b42c300b6, type: 3}
@@ -732,6 +746,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 1384076305360503850}
 --- !u!1 &7110954476343031104
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,6 +800,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 1384076305360503850}
 --- !u!1 &7110954476792616266
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +857,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 1384076305360503850}
 --- !u!50 &7110954476792616262
 Rigidbody2D:
   serializedVersion: 4
@@ -992,6 +1009,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 1384076305360503850}
 --- !u!1 &7110954477061482430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,6 +1062,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 1384076305360503850}
 --- !u!1 &7110954477312613181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,6 +1148,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 1384076305360503850}
 --- !u!1 &7110954477372543228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,3 +1202,4 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 1384076305360503850}

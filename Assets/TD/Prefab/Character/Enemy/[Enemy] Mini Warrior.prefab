@@ -84,6 +84,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 7123052711412485197}
 --- !u!1 &3946748681848493890
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,8 +215,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skeletonDataAsset: {fileID: 11400000, guid: 840677c6d1250a34187073a42ca96141, type: 2}
   initialSkinName: 
+  fixPrefabOverrideViaMeshFilter: 2
   initialFlipX: 0
   initialFlipY: 0
+  updateWhenInvisible: 3
   separatorSlotNames: []
   zSpacing: 0
   useClipping: 1
@@ -224,12 +227,21 @@ MonoBehaviour:
   clearStateOnDisable: 0
   tintBlack: 0
   singleSubmesh: 0
+  fixDrawOrder: 0
   addNormals: 0
   calculateTangents: 0
+  maskInteraction: 0
+  maskMaterials:
+    materialsMaskDisabled: []
+    materialsInsideMask: []
+    materialsOutsideMask: []
   disableRenderingOnOverride: 1
   translator:
     autoReset: 1
+    useCustomMixMode: 1
     layerMixModes: 00000000000000000000000000000000
+    layerBlendModes: 00000000000000000000000000000000
+  updateTiming: 1
 --- !u!61 &5159249896485806360
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -425,7 +437,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boneRoot: {fileID: 7438508051913320103}
+  flipBy180DegreeRotation: 0
   skeletonRenderer: {fileID: 52040122877931626}
+  skeletonGraphic: {fileID: 0}
 --- !u!50 &2942940229510002419
 Rigidbody2D:
   serializedVersion: 4
@@ -631,6 +645,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 7123052711412485197}
 --- !u!50 &617413377717192619
 Rigidbody2D:
   serializedVersion: 4
@@ -673,7 +688,7 @@ MonoBehaviour:
   owner: {fileID: 3946748681848493890}
   _bodyPart: 1
   multipleDamageX: 10
-  hitFX: {fileID: 144926, guid: fcb242a204cb73e46bb764583d0bf1fa, type: 3}
+  hitFX: {fileID: 171432, guid: 0ebcd60dd020022408e53f535d12f313, type: 3}
   ownerHitFX: {fileID: 0}
   soundHitVol: 0.5
   headHit: {fileID: 8300000, guid: 1d5c70a44377a8a419b2367b42c300b6, type: 3}
@@ -771,6 +786,7 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 7123052711412485197}
 --- !u!60 &4096914057234959296
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -955,3 +971,4 @@ MonoBehaviour:
   scale: 1
   zPosition: 1
   overrideAlpha: 1
+  hierarchy: {fileID: 7123052711412485197}
