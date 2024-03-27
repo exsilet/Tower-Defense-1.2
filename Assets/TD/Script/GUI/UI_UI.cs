@@ -18,7 +18,8 @@ public class UI_UI : MonoBehaviour
 
     public Text pointTxt;
     public Text levelName;
-    
+    public Text ShopCoinText;
+
     private float _lerpSpeedEnemy = 0.05f;
 
     private void Start()
@@ -36,6 +37,7 @@ public class UI_UI : MonoBehaviour
         enemyWavePercentSlider.value = Mathf.Lerp(enemyWavePercentSlider.value, enemyValue, _lerpSpeedEnemy);
 
         pointTxt.text = GameManager.Instance.Point + "";
+        ShopCoinText.text = GameManager.Instance.Point + "";
     }
 
     public void UpdateHealthbar(float currentHealth, float maxHealth)
