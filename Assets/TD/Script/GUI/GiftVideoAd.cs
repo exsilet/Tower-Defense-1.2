@@ -16,16 +16,13 @@ public class GiftVideoAd : MonoBehaviour
     void Start()
     {
         adBtn = button.GetComponent<Button>();
-        //if (GameMode.Instance)
-        //{
-        //    rewardedTxt.text = AdsManager.Instance.rewardedWatchAd + "";
-        //}
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //button.SetActive(allowShow && AdsManager.Instance && AdsManager.Instance.isRewardedAdReady());
+      
     }
 
     private void OnEnable()
@@ -46,7 +43,19 @@ public class GiftVideoAd : MonoBehaviour
     // Подписанный метод получения награды
     void Rewarded(int id)
     {
-        AddMoney();
+        if (id == 0)
+        {
+            AddMoney();
+        }
+        if (id == 1)
+        {
+            AddDoubleArrow();
+        }
+        if (id == 2)
+        {
+            AddTripleArrow();
+        }
+
     }
 
     private void OpenVideoReward()
@@ -61,27 +70,29 @@ public class GiftVideoAd : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void WatchVideoAd()
+    public void WatchVideoAd(int id)
     {
         SoundManager.Click();
-        //allowShow = false;
-        //AdsManager.AdResult += AdsManager_AdResult;
-        //AdsManager.Instance.ShowRewardedAds();
-        //Invoke("AllowShow", 2);
 
-        YandexGame.RewVideoShow(0);
+
+        YandexGame.RewVideoShow(id);
     }
 
     private void AddMoney()
     {
-        //AdsManager.AdResult -= AdsManager_AdResult;
         GlobalValue.SavedCoins += 300;
         SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
-
     }
 
-    //void AllowShow()
-    //{
-    //    allowShow = true;
-    //}
+    private void AddDoubleArrow()
+    {
+        GlobalValue.ItemDoubleArrow += 1;
+        SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
+    }
+
+    private void AddTripleArrow()
+    {
+        GlobalValue.ItemTripleArrow += 1;
+        SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
+    }
 }
