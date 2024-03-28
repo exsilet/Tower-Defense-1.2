@@ -45,25 +45,16 @@ public class BoostItemUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DA_remainTxt.text = "x" + GlobalValue.ItemDoubleArrow;
-        TA_remainTxt.text = "x" + GlobalValue.ItemTripleArrow;
-        PA_remainTxt.text = "x" + GlobalValue.ItemPoison;
-        FA_remainTxt.text = "x" + GlobalValue.ItemFreeze;
+        UpdatePanel();
+        ActiveItem();
 
-        DA_Button.interactable = GlobalValue.ItemDoubleArrow > 0;
-        TA_Button.interactable = GlobalValue.ItemTripleArrow > 0;
-        PA_Button.interactable = GlobalValue.ItemPoison > 0;
-        FA_Button.interactable = GlobalValue.ItemFreeze > 0;
-
-        DA_Icon.SetActive(false);
-        TA_Icon.SetActive(false);
-        PA_Icon.SetActive(false);
-        FA_Icon.SetActive(false);
+        HideIcon();
     }
 
     private void Update()
     {
         activeIcons.SetActive(DA_Icon.activeSelf || TA_Icon.activeSelf || PA_Icon.activeSelf || FA_Icon.activeSelf);
+        UpdatePanel();
     }
 
     #region Double Arrow
@@ -239,6 +230,30 @@ public class BoostItemUI : MonoBehaviour
         SoundManager.PlaySfx(SoundManager.Instance.BTsoundHide);
         boostItemAnim.SetBool("show", false);
         boostButtonAnim.SetBool("on", false);
+    }
+    
+    private void HideIcon()
+    {
+        DA_Icon.SetActive(false);
+        TA_Icon.SetActive(false);
+        PA_Icon.SetActive(false);
+        FA_Icon.SetActive(false);
+    }
+    
+    private void ActiveItem()
+    {
+        DA_Button.interactable = GlobalValue.ItemDoubleArrow > 0;
+        TA_Button.interactable = GlobalValue.ItemTripleArrow > 0;
+        PA_Button.interactable = GlobalValue.ItemPoison > 0;
+        FA_Button.interactable = GlobalValue.ItemFreeze > 0;
+    }
+
+    private void UpdatePanel()
+    {
+        DA_remainTxt.text = "x" + GlobalValue.ItemDoubleArrow;
+        TA_remainTxt.text = "x" + GlobalValue.ItemTripleArrow;
+        PA_remainTxt.text = "x" + GlobalValue.ItemPoison;
+        FA_remainTxt.text = "x" + GlobalValue.ItemFreeze;
     }
 
     #endregion

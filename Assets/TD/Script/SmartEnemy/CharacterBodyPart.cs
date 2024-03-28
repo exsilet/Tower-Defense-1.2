@@ -12,8 +12,10 @@ public class CharacterBodyPart : MonoBehaviour, ICanTakeDamageBodyPart
     public GameObject ownerHitFX;
     [Range(0,1)]
     public float soundHitVol = 0.5f;
-    public AudioClip headHit;
-
+    public AudioClip[] headHit;
+    public Vector2 healthBarOffset = new Vector2(0, 1.5f);
+    
+    
     public bool allowPushBack = false;
     public bool allowKnockDown = false;
     public bool allowShock = false;

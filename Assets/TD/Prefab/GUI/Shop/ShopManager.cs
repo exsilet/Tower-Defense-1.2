@@ -8,16 +8,21 @@ public class ShopManager : MonoBehaviour {
 	public GameObject[] shopPanels;
     public Sprite buttonActiveImage, buttonInActiveImage;
     public Image upgradeBut, boostBut, buyCoinBut;
+    public Text _coinText;
 	//public GameObject RemoveAdBut;
 //	MMFade mmFade = new MMFade();
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
+		_coinText.text = GlobalValue.SavedCoins.ToString();
         DisableObj();
 		ActivePanel (shopPanels[0]);
         SetActiveBut(0);
     }
 		
-	void Update(){
+	void Update()
+	{
+		_coinText.text = GlobalValue.SavedCoins.ToString();
 		//if(RemoveAdBut)
 		//RemoveAdBut.SetActive ((GlobalValue.RemoveAds ? false : true));
 	}
