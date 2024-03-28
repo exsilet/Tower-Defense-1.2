@@ -7162,8 +7162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe62405c4ab6c074c95243f05475b7d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rewardedTxt: {fileID: 1014832398}
-  button: {fileID: 1938463177}
 --- !u!222 &1080726658
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8025,7 +8023,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5625, y: -540}
+  m_AnchoredPosition: {x: 5625, y: -489.49573}
   m_SizeDelta: {x: 2250, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1363091270
@@ -9133,7 +9131,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 7875, y: -540}
+  m_AnchoredPosition: {x: 7875, y: -489.49573}
   m_SizeDelta: {x: 2250, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1602066729
@@ -10313,7 +10311,7 @@ PrefabInstance:
     - target: {fileID: 4290119270663588451, guid: 7a0e0f424819ac940b2c0d1fbf7a0bea,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 886.3
+      value: -43
       objectReference: {fileID: 0}
     - target: {fileID: 4630480726823874364, guid: 7a0e0f424819ac940b2c0d1fbf7a0bea,
         type: 3}
@@ -11158,7 +11156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 3375, y: -540}
+  m_AnchoredPosition: {x: 3375, y: -489.49573}
   m_SizeDelta: {x: 2250, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1874639163
@@ -11240,7 +11238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10125, y: -540}
+  m_AnchoredPosition: {x: 10125, y: -489.49573}
   m_SizeDelta: {x: 2250, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1915070479
@@ -12458,7 +12456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1125, y: -540}
+  m_AnchoredPosition: {x: 1125, y: -489.49573}
   m_SizeDelta: {x: 2250, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2106623952
@@ -12481,7 +12479,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fd0035a52a88f5d488f4b53d3392aed9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 87086d4ae361c4eb1b375e44924ff06b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
