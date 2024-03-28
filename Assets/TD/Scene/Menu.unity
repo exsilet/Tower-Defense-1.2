@@ -11847,6 +11847,7 @@ GameObject:
   - component: {fileID: 1975749118}
   - component: {fileID: 1975749117}
   - component: {fileID: 1975749121}
+  - component: {fileID: 1975749122}
   m_Layer: 5
   m_Name: HomeMenu
   m_TagString: Untagged
@@ -11974,6 +11975,18 @@ MonoBehaviour:
   musicImageOff: {fileID: 21300018, guid: 6f2423934acc2584db4836391e0888a1, type: 3}
   slider: {fileID: 9058057462328230135}
   progressText: {fileID: 9058057461462409253}
+--- !u!114 &1975749122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975749116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 760e67ac8bd836041a46f1a6832e1aad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2027427320
 GameObject:
   m_ObjectHideFlags: 0
