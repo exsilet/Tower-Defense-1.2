@@ -67,7 +67,7 @@ public class BoostItemUI : MonoBehaviour
     }
 
     #region Double Arrow
-    public void ActiveDoubleArror()
+    public void ActiveDoubleArrow()
     {
         SoundManager.PlaySfx(SoundManager.Instance.BTsoundUseBoost);
         GlobalValue.ItemDoubleArrow--;

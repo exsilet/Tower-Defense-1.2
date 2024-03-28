@@ -6,8 +6,6 @@ public class GiftVideoAd : MonoBehaviour
 {
     public Text rewardedTxt;
     public GameObject button;
-    public Text doubleArrow;
-    public Text tripleArrow;
 
     private Button adBtn;
     //bool allowShow = true;
@@ -35,19 +33,18 @@ public class GiftVideoAd : MonoBehaviour
     // Подписанный метод получения награды
     void Rewarded(int id)
     {
-        if (id == 0)
+        switch (id)
         {
-            AddMoney();
+            case 0:
+                AddMoney();
+                break;
+            case 1:
+                AddDoubleArrow();
+                break;
+            case 2:
+                AddTripleArrow();
+                break;
         }
-        if (id == 1)
-        {
-            AddDoubleArrow();
-        }
-        if (id == 2)
-        {
-            AddTripleArrow();
-        }
-
     }
 
     private void OpenVideoReward()
@@ -79,14 +76,14 @@ public class GiftVideoAd : MonoBehaviour
     private void AddDoubleArrow()
     {
         GlobalValue.ItemDoubleArrow += 1;
-        doubleArrow.text = GlobalValue.ItemDoubleArrow.ToString();
+        rewardedTxt.text = "x" + GlobalValue.ItemDoubleArrow;
         SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
     }
 
     private void AddTripleArrow()
     {
         GlobalValue.ItemTripleArrow += 1;
-        tripleArrow.text = GlobalValue.ItemTripleArrow.ToString();
+        rewardedTxt.text = "x" + GlobalValue.ItemTripleArrow;
         SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
     }
 }
