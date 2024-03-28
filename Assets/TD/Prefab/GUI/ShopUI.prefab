@@ -108,7 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e659ae81670b41b4aaea0f7969d010e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _idItem: 1
   _rewardButton: {fileID: 540062339402636235}
 --- !u!1 &243381822908375327
 GameObject:
@@ -619,7 +618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e659ae81670b41b4aaea0f7969d010e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _idItem: 1
   _rewardButton: {fileID: 2114724702389465215}
 --- !u!1 &1498684823124601150
 GameObject:
@@ -2082,6 +2080,7 @@ MonoBehaviour:
   upgradeBut: {fileID: 4429953146288169528}
   boostBut: {fileID: 2562732329740277287}
   buyCoinBut: {fileID: 7734269164075122520}
+  _coinText: {fileID: 3862218990706151581}
 --- !u!1 &3290738447934918400
 GameObject:
   m_ObjectHideFlags: 0
