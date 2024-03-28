@@ -307,7 +307,7 @@ MonoBehaviour:
   explosionFX: []
   randomHitPoint: {x: 0.2, y: 0.2}
   randomBloodPuddlePoint: {x: 0.5, y: 0.25}
-  healthBarOffset: {x: 0, y: 1.5}
+  healthBarOffset: {x: 0, y: 2.7}
   enemyState: 0
   canBeFreeze: 1
   dieFrozenFX: {fileID: 0}
@@ -746,7 +746,9 @@ MonoBehaviour:
   hitFX: {fileID: 0}
   ownerHitFX: {fileID: 0}
   soundHitVol: 0.5
-  headHit: {fileID: 0}
+  headHit:
+  - {fileID: 0}
+  healthBarOffset: {x: 0, y: 1.5}
   allowPushBack: 0
   allowKnockDown: 0
   allowShock: 0
@@ -821,11 +823,14 @@ MonoBehaviour:
   owner: {fileID: 333272136619103642}
   _bodyPart: 1
   multipleDamageX: 2
-  hitFX: {fileID: 171432, guid: 0ebcd60dd020022408e53f535d12f313, type: 3}
+  hitFX: {fileID: 144926, guid: fcb242a204cb73e46bb764583d0bf1fa, type: 3}
   ownerHitFX: {fileID: 0}
   soundHitVol: 0.5
-  headHit: {fileID: 8300000, guid: 1d5c70a44377a8a419b2367b42c300b6, type: 3}
-  allowPushBack: 0
+  headHit:
+  - {fileID: 8300000, guid: 1d5c70a44377a8a419b2367b42c300b6, type: 3}
+  - {fileID: 8300000, guid: 69224fe68132fde44a76f786fdbf3978, type: 3}
+  healthBarOffset: {x: 0, y: 1.5}
+  allowPushBack: 1
   allowKnockDown: 0
   allowShock: 0
 --- !u!50 &4383962675902952304
