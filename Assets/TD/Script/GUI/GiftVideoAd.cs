@@ -33,19 +33,18 @@ public class GiftVideoAd : MonoBehaviour
     // Подписанный метод получения награды
     void Rewarded(int id)
     {
-        if (id == 0)
+        switch (id)
         {
-            AddMoney();
+            case 0:
+                AddMoney();
+                break;
+            case 1:
+                AddDoubleArrow();
+                break;
+            case 2:
+                AddTripleArrow();
+                break;
         }
-        if (id == 1)
-        {
-            AddDoubleArrow();
-        }
-        if (id == 2)
-        {
-            AddTripleArrow();
-        }
-
     }
 
     private void OpenVideoReward()
