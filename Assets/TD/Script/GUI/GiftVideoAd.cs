@@ -72,6 +72,7 @@ public class GiftVideoAd : MonoBehaviour
     {
         //AdsManager.AdResult -= AdsManager_AdResult;
         GlobalValue.SavedCoins += 300;
+        Debug.Log(GlobalValue.SavedCoins);
         SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
     }
 
