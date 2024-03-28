@@ -76,12 +76,14 @@ public class GiftVideoAd : MonoBehaviour
     private void AddDoubleArrow()
     {
         GlobalValue.ItemDoubleArrow += 1;
+        rewardedTxt.text = "x" + GlobalValue.ItemDoubleArrow;
         SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
     }
 
     private void AddTripleArrow()
     {
         GlobalValue.ItemTripleArrow += 1;
+        rewardedTxt.text = "x" + GlobalValue.ItemTripleArrow;
         SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
     }
 }

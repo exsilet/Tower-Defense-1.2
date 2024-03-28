@@ -1001,7 +1001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -226.612, y: -40.64795}
+  m_AnchoredPosition: {x: -226.61182, y: -40.64795}
   m_SizeDelta: {x: 385.425, y: 68.926}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8761268992616931131
@@ -1170,7 +1170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 223, y: -40.64807}
+  m_AnchoredPosition: {x: 223, y: -40.648193}
   m_SizeDelta: {x: 151.643, y: 68.926}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!222 &353043060070971121
@@ -3488,7 +3488,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -167.651, y: -40.64807}
+  m_AnchoredPosition: {x: -167.651, y: -40.648193}
   m_SizeDelta: {x: 152.672, y: 68.926}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8877657201580916332
@@ -4685,7 +4685,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 263.61, y: -40.64807}
+  m_AnchoredPosition: {x: 263.60986, y: -40.648193}
   m_SizeDelta: {x: 475.221, y: 68.926}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6051551955118151490
@@ -7044,7 +7044,7 @@ PrefabInstance:
     - target: {fileID: 238796756360522557, guid: 4083442c672db844c83ce1a32b08ffb7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 238796756360522557, guid: 4083442c672db844c83ce1a32b08ffb7,
         type: 3}
@@ -9101,7 +9101,7 @@ PrefabInstance:
     - target: {fileID: 238796756360522557, guid: 4083442c672db844c83ce1a32b08ffb7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 238796756360522557, guid: 4083442c672db844c83ce1a32b08ffb7,
         type: 3}
@@ -9238,7 +9238,7 @@ PrefabInstance:
     - target: {fileID: 3137350552202554987, guid: 4083442c672db844c83ce1a32b08ffb7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ActiveDoubleArror
+      value: ActiveDoubleArrow
       objectReference: {fileID: 0}
     - target: {fileID: 3137350552202554987, guid: 4083442c672db844c83ce1a32b08ffb7,
         type: 3}
