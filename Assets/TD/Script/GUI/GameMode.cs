@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
+using YG;
 
 public class GameMode : MonoBehaviour
 {
@@ -63,7 +64,10 @@ public class GameMode : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GlobalValue.SavedDeath = YandexGame.savesData.recordCountDeath;
         DontDestroyOnLoad(gameObject);
+        Debug.Log(YandexGame.savesData.recordCountDeath);
+        Debug.Log(GlobalValue.SavedDeath);
         //Screen.SetResolution((int)resolution.x, (int)resolution.y, true);
         Application.targetFrameRate = setFPS;
 

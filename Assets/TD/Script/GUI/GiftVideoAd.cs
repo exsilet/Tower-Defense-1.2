@@ -6,6 +6,8 @@ public class GiftVideoAd : MonoBehaviour
 {
     public Text rewardedTxt;
     public GameObject button;
+    public Text doubleArrow;
+    public Text tripleArrow;
 
     private Button adBtn;
     //bool allowShow = true;
@@ -76,12 +78,14 @@ public class GiftVideoAd : MonoBehaviour
     private void AddDoubleArrow()
     {
         GlobalValue.ItemDoubleArrow += 1;
+        doubleArrow.text = GlobalValue.ItemDoubleArrow.ToString();
         SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
     }
 
     private void AddTripleArrow()
     {
         GlobalValue.ItemTripleArrow += 1;
+        tripleArrow.text = GlobalValue.ItemTripleArrow.ToString();
         SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
     }
 }

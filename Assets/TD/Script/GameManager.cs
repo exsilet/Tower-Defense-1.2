@@ -38,11 +38,14 @@ public class GameManager: MonoBehaviour {
 
     public int Death { get; set; }
 
+
     void Awake(){
 		Instance = this;
 		State = GameState.Menu;
 		listeners = new List<IListener> ();
-	}
+        GlobalValue.SavedDeath = YandexGame.savesData.recordCountDeath;
+
+    }
 
 	IEnumerator Start(){
 		yield return new WaitForEndOfFrame ();
@@ -126,7 +129,9 @@ public class GameManager: MonoBehaviour {
         GlobalValue.SavedDeath += Death;
         GlobalValue.SavedCoins += Point;
         Debug.Log(GlobalValue.SavedDeath);
+        YandexGame.savesData.recordCountDeath = GlobalValue.SavedDeath;
         YandexGame.NewLeaderboardScores("CountEnemy", GlobalValue.SavedDeath);
+        YandexGame.SaveProgress();
 
         //save level and save star
         if (GlobalValue.levelPlaying > GlobalValue.LevelPass)
