@@ -569,6 +569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textMPComponent: {fileID: 0}
+  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 391355459226283982}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: 
@@ -4396,6 +4398,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textMPComponent: {fileID: 0}
+  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 6892705452905518264}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: 
@@ -4963,6 +4967,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textMPComponent: {fileID: 0}
+  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 4404780167908021370}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: 
@@ -5626,6 +5632,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textMPComponent: {fileID: 0}
+  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 1790785817715937644}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: 
@@ -7217,6 +7225,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rewardedTxt: {fileID: 4291190325446888081}
   button: {fileID: 6922120682191140695}
+  doubleArrow: {fileID: 530296857863772454}
+  tripleArrow: {fileID: 4291190325446888081}
 --- !u!114 &3076216820586323734 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3137350552202554987, guid: 4083442c672db844c83ce1a32b08ffb7,
@@ -9010,6 +9020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textMPComponent: {fileID: 0}
+  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 5358719911629196984}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: 
@@ -9304,6 +9316,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rewardedTxt: {fileID: 530296857863772454}
   button: {fileID: 6685295571265135840}
+  doubleArrow: {fileID: 530296857863772454}
+  tripleArrow: {fileID: 4291190325446888081}
 --- !u!1 &6685295571265135840 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7001585900617106986, guid: 4083442c672db844c83ce1a32b08ffb7,
@@ -9357,7 +9371,7 @@ PrefabInstance:
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
@@ -9367,7 +9381,7 @@ PrefabInstance:
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
@@ -9417,12 +9431,12 @@ PrefabInstance:
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 136
+      value: 226
       objectReference: {fileID: 0}
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -40.6226
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
@@ -9507,7 +9521,7 @@ PrefabInstance:
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
@@ -9517,7 +9531,7 @@ PrefabInstance:
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
@@ -9567,12 +9581,12 @@ PrefabInstance:
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 136
+      value: 316
       objectReference: {fileID: 0}
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -40.6226
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137350552202554986, guid: 03a3d1f81959d0444a83e891fdc911c0,
         type: 3}
