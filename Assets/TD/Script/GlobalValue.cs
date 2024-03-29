@@ -67,13 +67,13 @@ public class GlobalValue : MonoBehaviour {
 
     public static int ItemDoubleArrow
     {
-        get { return PlayerPrefs.GetInt("ItemDoubleArrow", 1); }
+        get { return PlayerPrefs.GetInt("ItemDoubleArrow", 0); }
         set { PlayerPrefs.SetInt("ItemDoubleArrow", value); }
     }
 
     public static int ItemTripleArrow
     {
-        get { return PlayerPrefs.GetInt("ItemTripleArrow", 1); }
+        get { return PlayerPrefs.GetInt("ItemTripleArrow", 0); }
         set { PlayerPrefs.SetInt("ItemTripleArrow", value); }
     }
 

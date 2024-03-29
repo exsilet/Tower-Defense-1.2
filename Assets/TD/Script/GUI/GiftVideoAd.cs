@@ -1,89 +1,34 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 using YG;
 
-public class GiftVideoAd : MonoBehaviour
+namespace TD.Script.GUI
 {
-    public Text rewardedTxt;
-    public GameObject button;
-
-    private Button adBtn;
-    //bool allowShow = true;
-    // Start is called before the first frame update
-    void Start()
+    public class GiftVideoAd : MonoBehaviour
     {
-        adBtn = button.GetComponent<Button>();
-    }
-
-    private void OnEnable()
-    {
-        YandexGame.OpenVideoEvent += OpenVideoReward;
-        YandexGame.RewardVideoEvent += Rewarded;
-        YandexGame.CloseVideoEvent += CloseVideoReward;
-    }
-
-    // Отписываемся от события открытия рекламы в OnDisable
-    private void OnDisable()
-    {
-        YandexGame.OpenVideoEvent -= OpenVideoReward;
-        YandexGame.RewardVideoEvent -= Rewarded;
-        YandexGame.CloseVideoEvent -= CloseVideoReward;
-    }
-
-    // Подписанный метод получения награды
-    void Rewarded(int id)
-    {
-        switch (id)
+        [SerializeField] private Button _rewardButton;
+        
+        private void OnEnable()
         {
-            case 0:
-                AddMoney();
-                break;
-            case 1:
-                AddDoubleArrow();
-                break;
-            case 2:
-                AddTripleArrow();
-                break;
+            YandeAdServices.RewardClosed += RewardClosed;
         }
-    }
 
-    private void OpenVideoReward()
-    {
-        adBtn.interactable = false;
-        Time.timeScale = 0;
-    }
+        private void OnDisable()
+        {
+            YandeAdServices.RewardClosed -= RewardClosed;
+        }
 
-    private void CloseVideoReward()
-    {
-        adBtn.interactable = true;
-        Time.timeScale = 1;
-    }
+        public void WatchVideoAd(int id)
+        {
+            SoundManager.Click();
+            YandexGame.RewVideoShow(id);
+            _rewardButton.interactable = false;
+        }
 
-    public void WatchVideoAd(int id)
-    {
-        SoundManager.Click();
-        YandexGame.RewVideoShow(id);
-    }
-
-    private void AddMoney()
-    {
-        //AdsManager.AdResult -= AdsManager_AdResult;
-        GlobalValue.SavedCoins += 300;
-        Debug.Log(GlobalValue.SavedCoins);
-        SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
-    }
-
-    private void AddDoubleArrow()
-    {
-        GlobalValue.ItemDoubleArrow += 1;
-        rewardedTxt.text = "x" + GlobalValue.ItemDoubleArrow;
-        SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
-    }
-
-    private void AddTripleArrow()
-    {
-        GlobalValue.ItemTripleArrow += 1;
-        rewardedTxt.text = "x" + GlobalValue.ItemTripleArrow;
-        SoundManager.PlaySfx(SoundManager.Instance.soundPurchased);
+        private void RewardClosed()
+        {
+            _rewardButton.interactable = true;
+        }
     }
 }

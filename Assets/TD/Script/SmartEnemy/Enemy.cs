@@ -93,7 +93,9 @@ public class Enemy : MonoBehaviour,ICanTakeDamage, IListener {
     [HideInInspector] public Vector2 randomHitPoint = new Vector2 (0.2f, 0.2f);
     [HideInInspector] public Vector2 randomBloodPuddlePoint = new Vector2 (0.5f, 0.25f);
     public Vector2 healthBarOffset = new Vector2(0, 1.5f);
-    
+    private int _fontSizeHead = 30;
+    private int _fontSizeBody = 24;
+
     [ReadOnly] public ENEMYSTATE enemyState = ENEMYSTATE.IDLE;
 	protected ENEMYEFFECT enemyEffect;
 	[Space]
@@ -640,10 +642,11 @@ public class Enemy : MonoBehaviour,ICanTakeDamage, IListener {
         bool isExplosion = false;
 
         currentHealth -= (int)damage;
-        FloatingTextManager.Instance.ShowText("" + damage, healthBarOffset, Color.yellow, transform.position);
 
-        //if (_bodyPart == BODYPART.HEAD)
-        //    FloatingTextManager.Instance.ShowText("HEAD SHOT", healthBarOffset, Color.black, transform.position, 24);
+        if (_bodyPart == BODYPART.HEAD)
+            FloatingTextManager.Instance.ShowText("" + damage, healthBarOffset, Color.red, transform.position, _fontSizeHead);
+        else
+	        FloatingTextManager.Instance.ShowText("" + damage, healthBarOffset, Color.yellow, transform.position, _fontSizeBody);
 
         knockBackForce = force;
         if (hitFX)
