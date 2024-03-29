@@ -55,6 +55,7 @@ public class BoostItemUI : MonoBehaviour
     {
         activeIcons.SetActive(DA_Icon.activeSelf || TA_Icon.activeSelf || PA_Icon.activeSelf || FA_Icon.activeSelf);
         UpdatePanel();
+        ActiveItem();
     }
 
     #region Double Arrow
