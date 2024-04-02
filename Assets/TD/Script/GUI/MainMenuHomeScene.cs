@@ -141,7 +141,6 @@ public class MainMenuHomeScene : MonoBehaviour {
     {
         GlobalValue.isSound = !GlobalValue.isSound;
         soundImage.sprite = GlobalValue.isSound ? soundImageOn : soundImageOff;
-
         SoundManager.SoundVolume = GlobalValue.isSound ? 1 : 0;
     }
 
