@@ -12478,7 +12478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BlockLevel: {fileID: 1867390314}
   howManyBlocks: 5
-  step: 2250
+  step: 0
   Dots:
   - {fileID: 729627052}
   - {fileID: 2126396104}

@@ -147,7 +147,31 @@ public class MenuManager : MonoBehaviour, IListener
     {
        
     }
-    
+
+    //private void OnEnable()
+    //{ 
+    //    YandexGame.OpenFullAdEvent += OpenFullVideo;
+    //    YandexGame.CloseFullAdEvent += CloseFullVideo;
+    //}
+    //
+    //private void OnDisable()
+    //{
+    //    YandexGame.OpenFullAdEvent -= OpenFullVideo;
+    //    YandexGame.CloseFullAdEvent -= CloseFullVideo;
+    //}
+    //
+    //private void OpenFullVideo()
+    //{
+    //    AudioListener.volume = 0;
+    //    Time.timeScale = 0;      
+    //}
+    //
+    //private void CloseFullVideo()
+    //{       
+    //    Time.timeScale = 1;
+    //    AudioListener.volume = 1;
+    //}
+
     #region Music and Sound
     public void TurnSound()
     {
