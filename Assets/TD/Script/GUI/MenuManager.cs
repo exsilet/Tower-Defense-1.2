@@ -22,6 +22,7 @@ public class MenuManager : MonoBehaviour, IListener
     public Sprite soundImageOn, soundImageOff, musicImageOn, musicImageOff;
 
     UI_UI uiControl;
+    private bool _activeMap = true;
 
     private void Awake()
     {
@@ -216,9 +217,11 @@ public class MenuManager : MonoBehaviour, IListener
     {
         SoundManager.Click();
         GlobalValue.levelPlaying++;
-        string nextLevel = "Lv" + GlobalValue.levelPlaying;
+        GlobalValue.isMap = _activeMap;
+        StartCoroutine(LoadAsynchronously("Menu"));
         
-        StartCoroutine(LoadAsynchronously(nextLevel));
+        //string nextLevel = "Lv" + GlobalValue.levelPlaying;
+        //StartCoroutine(LoadAsynchronously(nextLevel));
         YandexGame.FullscreenShow();
     }
 

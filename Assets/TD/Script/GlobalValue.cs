@@ -10,6 +10,7 @@ public class GlobalValue : MonoBehaviour {
     public static string WorldReached = "WorldReached";
 	public static bool isSound = true;
 	public static bool isMusic = true;
+	public static bool isMap = false;
 
     public static bool isNewGame
     {
