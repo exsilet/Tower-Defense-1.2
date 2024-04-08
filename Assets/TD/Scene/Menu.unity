@@ -9356,10 +9356,9 @@ MonoBehaviour:
   textLComponent: {fileID: 1490395244}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: 
-  ru: "\u0421\u0442\u0438\u043A\u043C\u0435\u043D \u043F\u0440\u043E\u0442\u0438\u0432
-    \u041D\u0443\u0431\u0438\u043A\u043E\u0432"
-  en: Stickman VS Noobs
-  tr: "Stickman'e Kar\u015F\u0131 Nubikler"
+  ru: "\u0421\u0442\u0438\u043A\u0438 \u043F\u0440\u043E\u0442\u0438\u0432 \u041D\u0443\u0431\u0438\u043A\u043E\u0432"
+  en: Sticks VS Noobs
+  tr: "Sticks Kar\u015F\u0131 Nubikler"
   az: 
   be: 
   he: 
@@ -9376,7 +9375,7 @@ MonoBehaviour:
   tk: 
   uk: 
   uz: 
-  es: Stickman contra Nubic
+  es: Sticks contra Noobs
   pt: 
   ar: 
   id: 
