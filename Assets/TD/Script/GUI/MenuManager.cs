@@ -195,8 +195,8 @@ public class MenuManager : MonoBehaviour, IListener
     public void LoadHomeMenuScene()
     {
         SoundManager.Click();
-        
-        StartCoroutine(LoadAsynchronously("Menu"));
+
+        SceneManager.LoadScene("Menu");
         YandexGame.FullscreenShow();
     }
     
@@ -208,8 +208,8 @@ public class MenuManager : MonoBehaviour, IListener
     public void RestarLevel()
     {
         SoundManager.Click();
-        
-        StartCoroutine(LoadAsynchronously(SceneManager.GetActiveScene().name));
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         YandexGame.FullscreenShow();
     }
 
@@ -218,7 +218,7 @@ public class MenuManager : MonoBehaviour, IListener
         SoundManager.Click();
         GlobalValue.levelPlaying++;
         GlobalValue.isMap = _activeMap;
-        StartCoroutine(LoadAsynchronously("Menu"));
+        SceneManager.LoadScene("Menu");
         
         //string nextLevel = "Lv" + GlobalValue.levelPlaying;
         //StartCoroutine(LoadAsynchronously(nextLevel));

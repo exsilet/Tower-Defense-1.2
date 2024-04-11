@@ -77,23 +77,23 @@ namespace YG
             {
                 if (data.inTop)
                 {
-                    if (data.rank == 1.ToString())
+                    if (data.rank == "1")
                     {
-                        topPlayerActivityComponents[0].enabled = true;
-                        topPlayerActivityComponents[1].enabled = false;
-                        topPlayerActivityComponents[2].enabled = false;
+                        topPlayerActivityComponents[0].gameObject.SetActive(true);
+                        topPlayerActivityComponents[1].gameObject.SetActive(false);
+                        topPlayerActivityComponents[2].gameObject.SetActive(false);
                     }
-                    else if (data.rank == 2.ToString())
+                    if (data.rank == "2")
                     {
-                        topPlayerActivityComponents[1].enabled = true;
-                        topPlayerActivityComponents[0].enabled = false;
-                        topPlayerActivityComponents[2].enabled = false;
+                        topPlayerActivityComponents[0].gameObject.SetActive(false);
+                        topPlayerActivityComponents[1].gameObject.SetActive(true);
+                        topPlayerActivityComponents[2].gameObject.SetActive(false);
                     }
-                    else if (data.rank == 3.ToString())
+                    if (data.rank == "3")
                     {
-                        topPlayerActivityComponents[2].enabled = true;
-                        topPlayerActivityComponents[0].enabled = false;
-                        topPlayerActivityComponents[1].enabled = false;
+                        topPlayerActivityComponents[0].gameObject.SetActive(false);
+                        topPlayerActivityComponents[1].gameObject.SetActive(false);
+                        topPlayerActivityComponents[2].gameObject.SetActive(true);
                     }
                     //ActivityMomoObjects(topPlayerActivityComponents, true);
                 }

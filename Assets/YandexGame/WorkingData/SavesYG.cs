@@ -12,10 +12,10 @@ namespace YG
 
         // Тестовые сохранения для демо сцены
         // Можно удалить этот код, но тогда удалите и демо (папка Example)
-        public int recordCountDeath;   // Можно задать полям значения по умолчанию
-        //public string newPlayerName = "Hello!";
-        //public bool[] openLevels = new bool[3];
-
+        public int money = 1;                       // Можно задать полям значения по умолчанию
+        public string newPlayerName = "Hello!";
+        public bool[] openLevels = new bool[3];
+        public int recordCountDeath;
         // Ваши сохранения
 
         // ...
@@ -27,8 +27,8 @@ namespace YG
         public SavesYG()
         {
             // Допустим, задать значения по умолчанию для отдельных элементов массива
-            //recordCountDeath = GlobalValue.SavedDeath;
-            //openLevels[1] = true;
+
+            openLevels[1] = true;
         }
     }
 }
